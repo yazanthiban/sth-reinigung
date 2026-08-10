@@ -465,3 +465,16 @@ footer hr{
     text-align:center;
     color:#aaa;
 }
+@media (max-width: 768px) {
+
+    .kontakt-container {
+        flex-direction: column;
+    }
+
+    .kontakt-info,
+    form {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
