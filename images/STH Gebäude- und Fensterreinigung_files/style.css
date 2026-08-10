@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* ---------------- Navigation ---------------- */
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(8px);
+}
+
+nav h1{
+    color: white;
+    font-size: 32px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: #7CFC00;
+}
+
+/* ---------------- Hero ---------------- */
+
+.hero{
+    height: 100vh;
+    background-image: url("/images/start.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size: 64px;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.hero p{
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* ---------------- Button ---------------- */
+
+.btn{
+
+    background:black;
+    color: whitesmoke;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+}
+.btn:hover{
+    background: green;
+    transform: scale(1.05);
+}
+
+/* ---------------- Vorteile ---------------- */
+
+.vorteile{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box{
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.15);
+}
+
+.box h3{
+    margin-bottom: 15px;
+}
+
+.box p{
+    line-height: 25px;
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    .menu{
+        margin-top:20px;
+    }
+
+    .vorteile{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+
+}
+/* Leistungen */
+
+.leistungen{
+    padding:140px 80px 80px;
+    text-align:center;
+}
+
+.leistungen h2{
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.karten{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.karte{
+    width:320px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.karte:hover{
+    transform:translateY(-8px);
+}
+
+.karte h3{
+    margin-bottom:15px;
+}
+
+.karte p{
+    line-height:26px;
+}
+/* Kontakt */
+
+.kontakt{
+
+    padding:140px 80px;
+
+}
+
+.kontakt h2{
+
+    text-align:center;
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+.kontakt > p{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.kontakt-container{
+
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+    align-items:flex-start;
+
+}
+
+.kontakt-info{
+
+    width:40%;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.15);
+
+}
+
+.kontakt-info h3{
+
+    margin-bottom:25px;
+
+}
+
+.kontakt-info p{
+
+    margin:20px 0;
+
+}
+
+form{
+
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+form input,
+form textarea{
+
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+form textarea{
+
+    resize:none;
+
+}
+
+form button{
+
+    background:#7CFC00;
+    border:none;
+    padding:15px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+form button:hover{
+
+    background:#63c700;
+
+}
+
+/* ---------------- Über uns ---------------- */
+
+.ueber-uns {
+    padding: 140px 80px 80px;
+    text-align: center;
+}
+
+.ueber-uns h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.ueber-uns p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 30px;
+}
+
+.team {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.ueber-uns h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.werte {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.wert {
+    width: 300px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.wert h3 {
+    margin-bottom: 15px;
+}
+
+.wert p {
+    line-height: 25px;
+}
+.ueber-hero {
+    height: 500px;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("/images/uberuns.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ueber-hero h2 {
+    color: white;
+    font-size: 60px;
+    background: rgba(0,0,0,.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
