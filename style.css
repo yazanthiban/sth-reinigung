@@ -103,7 +103,7 @@ nav h1{
 
 .hero{
     height: 100vh;
-    background-image: url("/images/start.jpg");
+    background-image: url("images/start.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -398,7 +398,7 @@ form button:hover{
     height: 500px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("/images/wagen.jpg");
+        url("images/wagen.jpg");
 
     background-size: cover;
     background-position: center;
